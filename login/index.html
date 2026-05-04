@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Post e Coment</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #1e1e1e;
+            color: white;
+            text-align: center;
+        }
+
+        input {
+            margin-top: 10px;
+            padding: 8px;
+            background-color: #1e1e1e;
+            border: 2px solid white;
+            border-radius: 5px;
+            color: white;
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Login</h1>
+
+    <br>
+    <input id="Name" placeholder="Name">
+    <br>
+    <br>
+    <button style="width: 85px; height: 35px; font-size: 26px;">Entrar</button>
+
+    <script>
+        let Name = document.getElementById('Name').value;
+
+        if (Name !== "") {
+            alert("Sem Nome!")
+
+        } else {
+
+            localStorage.setItem("Nome", name)
+            window.location.href = "/Post-and-Coment"
+        }
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
