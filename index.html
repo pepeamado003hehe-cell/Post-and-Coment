@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Post e Coment</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #1e1e1e;
+            color: white;
+            text-align: center;
+        }
+
+        input {
+            margin-top: 10px;
+            padding: 8px;
+            background-color: #1e1e1e;
+            border: 2px solid white;
+            border-radius: 5px;
+            color: white;
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Post e Coment</h1>
+
+    <br>
+    <button style="background-color: blue; width: 85px; height: 45px; font-size: 30px;">Play</button>
+
+    <p>Name: <span id="nametext"></span></p>
+
+    <script>
+
+        let name = localStorage.getItem("Nome");
+
+        const nametext = document.getElementById('nametext');
+
+        nametext.textContent = name;
+
+        if (name) {
+
+        } else {
+            window.location.href = "/Post-and-Coment/login"
+        }
+
+        function Play() {
+            window.location.href = "/Post-and-Coment/game"
+
+        }
+
+    </script>
+</body>
+
+</html>
